@@ -1,0 +1,3 @@
+/home/yilin/Code/yueylLearnOpenGL/build/CMakeFiles/learnOpenGL.dir
+/home/yilin/Code/yueylLearnOpenGL/build/CMakeFiles/edit_cache.dir
+/home/yilin/Code/yueylLearnOpenGL/build/CMakeFiles/rebuild_cache.dir
