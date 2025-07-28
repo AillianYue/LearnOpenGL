@@ -40,6 +40,9 @@
 # debug information files
 *.dwo
 
-# 构建目录
+# 忽略构建目录
 build/
 build-*/
+
+# 忽略VS Code配置目录
+.vscode/
