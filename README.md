@@ -7,7 +7,7 @@ mkdir build && cd build
 cmake ..
 make -j
 
-./learnopengl
+./learnOpenGL
 ```
 
 部分素材来源(侵删)：

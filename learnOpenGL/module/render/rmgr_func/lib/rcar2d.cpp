@@ -17,7 +17,7 @@ bool RenderCar2D::Init() {
     spdlog::info("{} FRAG_SHADER = {}", m_name, FRAG_SHADER);
     m_shader = std::make_shared<opengl::Shader>(VERT_SHADER.c_str(), FRAG_SHADER.c_str());
 
-    m_mesh = std::make_shared<MeshTex2D>(TEXTURE_PATH, m_vert);
+    m_mesh = std::make_shared<Mesh2D>(TEXTURE_PATH, m_vert);
 
     m_isInit = true;
     spdlog::info("{} Init() success", m_name);

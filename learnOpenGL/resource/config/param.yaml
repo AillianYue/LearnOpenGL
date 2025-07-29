@@ -11,9 +11,9 @@ Param:
       w: 576
       h: 900
     RightSize:
-      x: 576
+      x: 0
       y: 0
-      w: 1000
+      w: 864
       h: 900
     px2mm: 11.8722
   RenderDemo:

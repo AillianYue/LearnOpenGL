@@ -36,6 +36,7 @@ bool RMgr::Init() {
         // 创建渲染任务
         // auto rRenderDemo = std::make_shared<render::RenderDemo>("RenderDemo", *m_rCtxData, *m_rCtxWin);
         auto rCar2D      = std::make_shared<render::RenderCar2D>("RenderCar2D", *m_rCtxData, *m_rCtxWin);
+        auto rCar3D      = std::make_shared<render::RenderCar3D>("RenderCar3D", *m_rCtxData, *m_rCtxWin);
         
         m_rCopyFbo = std::make_shared<render::RCopyFbo>("RCopyFbo",*m_rCtxData, *m_rCtxWin);
 
@@ -44,6 +45,7 @@ bool RMgr::Init() {
         // m_rRenderDataLoader->Run();
         // m_rRenderDataLoader->Push(rRenderDemo);
         m_rRenderDataLoader->Push(rCar2D);
+        m_rRenderDataLoader->Push(rCar3D);
 
         m_rRenderDataLoader->Push(m_rCopyFbo);
 
@@ -51,7 +53,8 @@ bool RMgr::Init() {
         // m_taskLeft.emplace_back(rRenderDemo);
         m_taskLeft.emplace_back(rCar2D);
 
-        // m_taskRight.emplace_back();
+        // m_taskRight.emplace_back(rRenderDemo);
+        m_taskRight.emplace_back(rCar3D);
 
         // 添加数据更新
         // m_updatePrmReq.emplace_back(rRenderDemo);
